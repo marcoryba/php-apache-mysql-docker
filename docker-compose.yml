@@ -42,7 +42,7 @@ services:
       MYSQL_PASSWORD: "${DB_PASSWORD}"
     container_name: mysql
   adminer:
-    image: adminer
+    image: ${ADMINER_VERSION}
     restart: always
     ports:
       - 8080:8080
