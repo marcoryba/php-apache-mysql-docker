@@ -43,8 +43,8 @@ services:
     container_name: mysql
 networks:
   frontend:
-    name: fronted
+    name: mrcrb-fronted
   backend:
-    name: backend
+    name: mrcrb-backend
 volumes:
     data:
