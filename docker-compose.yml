@@ -17,7 +17,6 @@ services:
       - ${PROJECT_ROOT}/:/var/www/html/
   mysql:
     image: mysql:${MYSQL_VERSION:-latest}
-    command: '--default-authentication-plugin=mysql_native_password'
     restart: always
     ports:
       - "3306:3306"
