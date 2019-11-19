@@ -31,14 +31,6 @@ services:
       MYSQL_USER: "${DB_USERNAME}"
       MYSQL_PASSWORD: "${DB_PASSWORD}"
     container_name: mysql
-  adminer:
-    image: ${ADMINER_VERSION}
-    restart: always
-    ports:
-      - 8080:8080
-    networks:
-      - backend
-    container_name: adminer
 networks:
   frontend:
   backend:
